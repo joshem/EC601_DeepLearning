@@ -1,3 +1,5 @@
+# Please go to EC601_Deep_Learning, I broke this repo beyond repair. 
+
 # Tensor Flow Implementation
 This project was done for a course, this one geared towards Machine Learning.  These classes were separated into Trains and Cars, specifically. Note however, more categories can be added.
 
