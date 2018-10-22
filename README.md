@@ -44,3 +44,4 @@ This seems to be an elegant design, but there are some issues of note.  Mainly, 
 
 
 # System Comparison
+In this section, I will compare the work done with that of another implementation of machine learning, specifically of object detection.  I will ImageAI (https://github.com/OlafenwaMoses/ImageAI/), an implementation that takes the functionality of both Tensorflow and openCV to make its own, powerful and robust design.
