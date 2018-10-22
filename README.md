@@ -42,4 +42,4 @@ One may refer to the pictures in this repo to see for oneself how well these res
 This seems to be an elegant design, but there are some issues of note.  Mainly, the tmp folder gets cleared frequently, so the learning data could be cleared, meaning that there will have to be retraining.  Improvements would be to tweak this dense code such that it outputs to a more convenient location.
 
 
-
+# System Comparison
