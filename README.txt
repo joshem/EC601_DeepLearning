@@ -19,4 +19,4 @@ python label_image.py \
 --image=$PATH/TO/TESTING/TEST.jpg
 
  
-
+Running these tests, with both 
