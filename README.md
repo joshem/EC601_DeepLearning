@@ -1,4 +1,4 @@
-# Rensor Flow Implementation
+# Tensor Flow Implementation
 This project was done for a course, this one geared towards Machine Learning.  These classes were separated into Trains and Cars, specifically. Note however, more categories can be added.
 
 For installation, please follow instructions on https://www.tensorflow.org/install/pip (this installation uses pip, which it assumes you have not installed yet).  Note that for this design, you will also need tensorflow_hub.  
