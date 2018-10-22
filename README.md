@@ -1,4 +1,4 @@
-This project was done for a course, this one geared towards Machine Learning.  These classes were separated into Trains and Cars, specifically. Note however, more categories can be added.
+﻿This project was done for a course, this one geared towards Machine Learning.  These classes were separated into Trains and Cars, specifically. Note however, more categories can be added.
 
 For installation, please follow instructions on https://www.tensorflow.org/install/pip (this installation uses pip, which it assumes you have not installed yet).  Note that for this design, you will also need tensorflow_hub.  
 
@@ -12,11 +12,34 @@ python3 tf_retrain.py --image_dir /PATH/TO/MY/TRAINING/DATA
 
 The tf_label_image.py tests an image, giving confidence of the result. To run, do the following:
 
-python label_image.py \
+python tf_label_image.py \
 --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt \
 --input_layer=Placeholder \
 --output_layer=final_result \
---image=$PATH/TO/TESTING/TEST.jpg
+--image=/PATH/TO/TESTING/TEST.jpg
 
  
-Running these tests, with both 
+Running these tests, with both test files, here are the results:
+
+testCar.jpg
+cars 0.99988115
+train 0.00011882853
+
+testCarBlurry.jpg
+cars 0.74984735
+train 0.25015265
+
+testTrain.jpg
+train 0.9996586
+cars 0.00034138633
+
+testTrainBlurry.jpg
+train 0.9999548
+cars 4.515491e-05
+
+One may refer to the pictures in this repo to see for oneself how well these results work.  However, I will state that the results are accurate, never falsely identifying in these particular trials. 
+
+This seems to be an elegant design, but there are some issues of note.  Mainly, the tmp folder gets cleared frequently, so the learning data could be cleared, meaning that there will have to be retraining.  Improvements would be to tweak this dense code such that it outputs to a more convenient location.
+
+
+
