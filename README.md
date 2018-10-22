@@ -66,5 +66,18 @@ pip3 install https://github.com/OlafenwaMoses/ImageAI/releases/download/2.0.2/im
 
 I also had to download tkinter: sudo apt install python3-tk
 
+There are various different implementations for this model, listed in ImageAI_simple and ImageAI_complex.  Both use Resnet, a deep learning model developed by Facebook. This image detector allows for the speed of single stage detectors, while surpassing the accuracy of double-stage detectors. The more complex program also requires YOLOv3, a similar detector.  The download links for these are in the github for ImageAI (note that they are very large).
+
+You can run the program with:
+
+python3 ImageAI_simple.py 
+
+OR
+
+python3 ImageAI_complex.py
+
 # System Comparison
-In this section, I will compare the work done with that of another implementation of machine learning, specifically of object detection.  I will ImageAI (https://github.com/OlafenwaMoses/ImageAI/), an implementation that takes the functionality of both Tensorflow and openCV to make its own, powerful and robust design.
+## TensorFlow
+TensorFlow is a very popular machine learning tool developed by Google.  It is very well documented, and is constantly getting updated and improved upon.  It is very extensive, however, the documentation is equally as intensive, and there are great tutorials, both from Google and from third party groups.  It uses Keras, which is a fantastic API in order to create neural networks.  TensorFlow requires that you teach your machine, meaning that you must create your own models.  However the documentation to do this is very extensive, and some programs to do this are even provided.
+## ImageAI
+ImageAI is an extension upon TensorFlow and OpenCV, among other projects. It was built to support all machine learning frameworks under the sun, and be incredibly easy to use, using as few lines of code as possible.  I think they succeeded in this regard, as both programs are under 20 lines of code.  Most lines are API calls to other ML algorithms. The support for RetinaNet means that you can identify up to 80 different objects, without having to train a single thing.  It also supports the ability to create your own models within its framework. This seems like a really well thought out, extensive library that seems very useful in order to create an easy to deploy machine learning framework. 
