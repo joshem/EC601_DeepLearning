@@ -6,7 +6,7 @@ There are a multitude of dataset sites offered online.  I used Kaggle, although 
 After this, you can go to Kaggle and search for datasets. I used the famous Stanford cars dataset.  I also used a trains dataset.
 
 In order to implement my ML design, I used Tensor Flow licensed programming, and have properly cited as such.  The tf_retrain.py is based on the retrain.py found here: 'https://github.com/tensorflow/hub/blob/master/examples/image_retraining/retrain.py/'.  This trains a model to recognize against multiple classes, in which training data is pre-sorted into directories within the working directory.  For my design, I had a cars directory and train directory in the same folder as tf_retrain.py.  
-Note that retrain takes a significant amount of time, so I significantly reduced the sample size of the Stanford dataset to only 2000 pictures.  The dataset of trains only had ~1000 images, but some had to be culled due to no longer existing.
+Note that retrain takes a significant amount of time, so I significantly reduced the sample size of the Stanford dataset to only 2000 pictures.  The dataset of trains only had ~1000 images.
 To run retrain, run the following:
 python3 tf_retrain.py --image_dir /PATH/TO/MY/TRAINING/DATA
 
@@ -21,7 +21,7 @@ python tf_label_image.py \
  
 Running these tests, with both test files, here are the results:
 
-testCar.jpg
+testCar.jpg:
 cars 0.99988115
 train 0.00011882853
 
@@ -29,11 +29,11 @@ testCarBlurry.jpg
 cars 0.74984735
 train 0.25015265
 
-testTrain.jpg
+testTrain.jpg:
 train 0.9996586
 cars 0.00034138633
 
-testTrainBlurry.jpg
+testTrainBlurry.jpg:
 train 0.9999548
 cars 4.515491e-05
 
