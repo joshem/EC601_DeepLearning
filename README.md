@@ -64,5 +64,7 @@ pip3 install keras
 
 pip3 install https://github.com/OlafenwaMoses/ImageAI/releases/download/2.0.2/imageai-2.0.2-py3-none-any.whl 
 
+I also had to download tkinter: sudo apt install python3-tk
+
 # System Comparison
 In this section, I will compare the work done with that of another implementation of machine learning, specifically of object detection.  I will ImageAI (https://github.com/OlafenwaMoses/ImageAI/), an implementation that takes the functionality of both Tensorflow and openCV to make its own, powerful and robust design.
