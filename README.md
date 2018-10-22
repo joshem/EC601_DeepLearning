@@ -45,6 +45,7 @@ This seems to be an elegant design, but there are some issues of note.  Mainly, 
 # ImageAI Implementation
 ImageAI is another implementation of object detection, based off of Tensorflow as well as OpenCV.  The creators are experienced within the field, also creating an extensible training framework for PyTorch.  You can see their work for ImageAI here: https://github.com/OlafenwaMoses/ImageAI/
 I recommend going to their site for full instructions, as there are a lot of dependencies, but I will give you a list of dependencies as of writing this:
+
 pip3 install --upgrade tensorflow
 
 pip3 install numpy
